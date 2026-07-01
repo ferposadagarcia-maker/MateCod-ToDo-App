@@ -1,6 +1,3 @@
-/* ==========================================================================
-   VARIABLES GLOBALES (Design Tokens para consistencia de estilo)
-   ========================================================================== */
 :root {
   /* Paleta de Colores Básica */
   --bg-global: #f4f2ee;
@@ -32,9 +29,6 @@
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* ==========================================================================
-   RESETEO GLOBAL (Normalización de estilos)
-   ========================================================================== */
 html,
 body {
   margin: 0;
