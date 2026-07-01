@@ -1,0 +1,125 @@
+/* Contenedor Principal Centrado */
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9fafb;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Tarjeta del Formulario */
+.register-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.register-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #111827;
+    margin: 0 0 8px 0;
+}
+
+.register-subtitle {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0 0 24px 0;
+    line-height: 1.25rem;
+}
+
+/* Alertas de error */
+.register-error-alert {
+    font-size: 0.875rem;
+    color: #b91c1c;
+    background-color: #fef2f2;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.register-form {
+    text-align: left;
+}
+
+.register-group {
+    margin-bottom: 16px;
+}
+
+.register-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+.register-input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.875rem;
+    color: #1f2937;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.register-input:focus {
+    outline: none;
+    border-color: #111827;
+}
+
+/* Botón de registro */
+.register-submit-btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #111827;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+}
+
+.register-submit-btn:hover:not(:disabled) {
+    background-color: #1f2937;
+}
+
+.register-submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Footer / Enlace */
+.register-footer-text {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.link-to-login {
+    background: none;
+    border: none;
+    color: #111827;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: underline;
+}

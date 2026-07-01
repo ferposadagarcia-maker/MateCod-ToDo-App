@@ -1,0 +1,213 @@
+/* Contenedor Principal del Dashboard */
+.dashboard-container {
+    min-height: 100vh;
+    background-color: #f9fafb;
+    /* Gris muy claro de fondo */
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+/* Cabecera / Header */
+.dashboard-header {
+    background-color: #ffffff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.header-user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    font-size: 1.5rem;
+    background-color: #f3f4f6;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.user-welcome {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin: 0;
+}
+
+.user-email {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* Botón de Cerrar Sesión */
+.logout-btn {
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    color: #4b5563;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.logout-btn:hover {
+    background-color: #fef2f2;
+    color: #ef4444;
+    border-color: #fca5a5;
+}
+
+/* Grid de distribución principal (Sidebar + Main) */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    /* Columna fija para el formulario, flexible para la lista */
+    gap: 32px;
+    padding: 32px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* COLUMNA IZQUIERDA: Sidebar */
+.dashboard-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Widget de Estadísticas */
+.stats-widget {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+}
+
+.widget-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #374151;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.stat-box {
+    background-color: #f9fafb;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.stat-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+/* COLUMNA DERECHA: Lista de Tareas */
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Barra de Filtros */
+.filter-bar {
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 12px;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6b7280;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    color: #111827;
+}
+
+.filter-btn.active {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+/* Estados de carga, error y vacío */
+.loading-state,
+.error-state {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.875rem;
+    color: #6b7280;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+}
+
+.error-state {
+    color: #b91c1c;
+    background-color: #fef2f2;
+}
+
+.empty-tasks-state {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px dotted #d1d5db;
+    color: #4b5563;
+}
+
+.empty-subtext {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 4px;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Adaptabilidad Móvil (Responsive) --- */
+@media (max-width: 768px) {
+    .dashboard-header {
+        padding: 16px 20px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        /* Una sola columna en dispositivos móviles */
+        padding: 20px;
+        gap: 24px;
+    }
+}

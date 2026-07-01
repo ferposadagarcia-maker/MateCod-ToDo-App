@@ -1,0 +1,159 @@
+/* Contenedor principal que centra la tarjeta con el fondo arena global */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-global);
+    /* Hereda el color arena de index.css */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Tarjeta minimalista con bordes muy redondeados */
+.login-card {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-subtle);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Títulos y Subtítulos */
+.login-title {
+    font-size: 1.625rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: 0;
+    margin-bottom: 28px;
+    line-height: 1.25rem;
+}
+
+/* Alerta de error sutil y limpia */
+.login-error-alert {
+    font-size: 0.875rem;
+    color: #b91c1c;
+    background-color: #fef2f2;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    border: 1px solid #fee2e2;
+}
+
+/* Alineación de inputs */
+.login-form {
+    text-align: left;
+}
+
+.login-group {
+    margin-bottom: 16px;
+}
+
+.login-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+}
+
+/* Inputs de texto redondeados tipo píldora */
+.login-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 0.875rem;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: var(--text-main);
+    box-shadow: 0 0 0 3px rgba(28, 28, 28, 0.08);
+}
+
+/* Botón Principal (Ingresar) - Carbón Profundo */
+.login-submit-btn {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--accent-black);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-submit-btn:hover {
+    background-color: var(--accent-black-hover);
+}
+
+/* Botón Google - Minimalista en blanco con borde suave */
+.login-google-btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-main);
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login-google-btn:hover {
+    background-color: #f9fafb;
+}
+
+.google-icon {
+    font-size: 1.1rem;
+}
+
+/* Enlace inferior de navegación */
+.login-footer-text {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+
+.link-to-register {
+    background: none;
+    border: none;
+    color: var(--text-main);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+.link-to-register:hover {
+    color: var(--accent-black-hover);
+}

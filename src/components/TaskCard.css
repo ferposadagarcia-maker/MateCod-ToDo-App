@@ -1,0 +1,222 @@
+/* Contenedor Principal de la Tarjeta */
+.task-card-container {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 16px;
+    border-left: 5px solid #d1d5db;
+    /* Borde izquierdo dinámico según prioridad */
+    border-top: 1px solid #f3f4f6;
+    border-right: 1px solid #f3f4f6;
+    border-bottom: 1px solid #f3f4f6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 12px;
+}
+
+.task-card-container:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Colores de Borde Izquierdo según Prioridad */
+.task-card-container.low {
+    border-left-color: #10b981;
+    /* Verde */
+}
+
+.task-card-container.medium {
+    border-left-color: #facc15;
+    /* Amarillo */
+}
+
+.task-card-container.high {
+    border-left-color: #ef4444;
+    /* Rojo */
+}
+
+/* Estilo para Tarea Completada (Feedback Visual) */
+.task-card-container.completed {
+    opacity: 0.6;
+}
+
+.task-card-container.completed .task-title-text {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+/* --- VISTA DE LECTURA --- */
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+/* Checkbox redondo y moderno */
+.task-checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #d1d5db;
+    cursor: pointer;
+    accent-color: #111827;
+}
+
+.task-title-text {
+    flex-grow: 1;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+/* Badges de Prioridad */
+.priority-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+.priority-badge.low {
+    background-color: #e6fbf4;
+    color: #047857;
+}
+
+.priority-badge.medium {
+    background-color: #fefce8;
+    color: #a16207;
+}
+
+.priority-badge.high {
+    background-color: #fef2f2;
+    color: #b91c1c;
+}
+
+/* Texto de descripción */
+.task-description-text {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin: 0 0 12px 30px;
+    /* Alineado bajo el título sin pisar el checkbox */
+}
+
+/* Footer de Tarjeta */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.task-due-date {
+    font-size: 0.75rem;
+    color: #4b5563;
+}
+
+.task-due-date-empty {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    font-style: italic;
+}
+
+/* Botones de acción del footer */
+.card-actions-group {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-action-edit,
+.btn-action-delete {
+    background: none;
+    border: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.15s;
+}
+
+.btn-action-edit {
+    color: #2563eb;
+}
+
+.btn-action-edit:hover {
+    background-color: #eff6ff;
+}
+
+.btn-action-delete {
+    color: #dc2626;
+}
+
+.btn-action-delete:hover {
+    background-color: #fef2f2;
+}
+
+
+/* --- VISTA DE EDICIÓN --- */
+
+.card-edit-mode {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-input-title,
+.edit-input-desc,
+.edit-input-date,
+.edit-input-select {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.edit-input-desc {
+    resize: none;
+}
+
+.edit-meta-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.card-actions-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.btn-save,
+.btn-cancel {
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-save {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.btn-save:hover {
+    background-color: #1f2937;
+}
+
+.btn-cancel {
+    background-color: #f3f4f6;
+    color: #4b5563;
+}
+
+.btn-cancel:hover {
+    background-color: #e5e7eb;
+}
