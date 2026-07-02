@@ -189,12 +189,16 @@
 
     .login-graphic-img {
         width: 100%;
-        max-width: 380px;
+        max-width: 480px;
         height: auto;
         object-fit: contain;
     }
 
     .login-form-panel {
         padding: 60px;
+    }
+
+    .login-illustration-panel .slogan-text {
+        color: #1c1c1c !important;
     }
 }
