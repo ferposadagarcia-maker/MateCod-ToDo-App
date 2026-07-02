@@ -91,7 +91,8 @@ function RegisterPage(): JSX.Element {
                             disabled={isRegistering}
                         />
                     </div>
-                    <button type="submit" className="register-submit-button" disabled={isRegistering}>
+
+                    <button onClick={handleRegister} className="register-submit-button" disabled={isRegistering}>
                         {isRegistering ? "Registrando..." : "Registrarse"}
                     </button>
                 </form>

@@ -3,6 +3,7 @@ import { useAuth } from "../features/auth/Authenticator";
 import { useNavigate } from "react-router-dom";
 import { getAuthErrorMessage } from "../features/auth/authErrors";
 import "./LoginPage.css";
+import "../assets/login-illustration.png"
 
 function LoginPage(): JSX.Element {
     const { signIn, signInWithGoogle } = useAuth();
@@ -34,7 +35,7 @@ function LoginPage(): JSX.Element {
                         Más <span className="highlight-text">"Ya quedó!"</span>
                     </h1>
                 </div>
-                <img src={"./assets/login-illustration.png"}
+                <img src={"../../assets/login-illustration.png"}
                     alt="Menos caos, más ya quedó"
                     className="login-graphic-img"
                 />
