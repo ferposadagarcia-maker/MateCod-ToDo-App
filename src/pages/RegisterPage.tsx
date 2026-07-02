@@ -53,7 +53,7 @@ function RegisterPage(): JSX.Element {
             <div className="register-card">
                 <h2 className="register-title"> Crear tu cuenta</h2>
                 <p className="register-subtitle">Registra tus datos y comencemos a organizar tus tareas</p>
-                {error && <div className="register-error-alert">{error}</div>}
+                {error && <div className="register-submit-btn">{error}</div>}
                 <form onSubmit={handleRegister} className="register-form">
                     <div className="register-group">
                         <label className="register-label">Correo Electrónico</label>
