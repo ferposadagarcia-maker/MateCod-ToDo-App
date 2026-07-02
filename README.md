@@ -13,12 +13,12 @@ Desarrollada como proyecto integrador del **Módulo 4 de Soy Henry (Full Stack D
 ![Login Page](/src/assets/login-page.png)
 
 ### 2. Dashboard (To-Do-App)
-![Dashboard Page](/src/assets/dashboard-page-png)
+![Dashboard Page](/src/assets/dashboard-page.png)
 
 ### 3. Dark Mode 🌙
-![Ipad Size](/src/assets/ipad-size-dark-mode.png)
+![Ipad Size](/src/assets/ipad-size-dark.png)
 
-![Phone Size](/src/assets/phone-size-dark-mode.png)
+![Phone Size](/src/assets/phone-size-dark.png)
 
 ### 4. 📨 Correo Recibido
 ![Email Send](/src/assets/correo-enviado.png)
