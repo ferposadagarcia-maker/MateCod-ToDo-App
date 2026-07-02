@@ -35,7 +35,7 @@ function LoginPage(): JSX.Element {
                         Más <span className="highlight-text">"Ya quedó!"</span>
                     </h1>
                 </div>
-                <img src={"../../assets/login-illustration.png"}
+                <img src="../../assets/login-illustration.png"
                     alt="Menos caos, más ya quedó"
                     className="login-graphic-img"
                 />
