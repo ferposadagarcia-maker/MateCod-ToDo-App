@@ -3,7 +3,7 @@ import { useAuth } from "../features/auth/Authenticator";
 import { useNavigate } from "react-router-dom";
 import { getAuthErrorMessage } from "../features/auth/authErrors";
 import "./LoginPage.css";
-import illustration from "../assets/login-illustration.png"
+import illustration from "../assets/login-illustration.webp"
 
 function LoginPage(): JSX.Element {
     const { signIn, signInWithGoogle } = useAuth();

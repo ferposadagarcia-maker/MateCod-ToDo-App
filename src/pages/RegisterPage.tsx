@@ -4,7 +4,6 @@ import { auth } from "../services/firebase";
 import { useNavigate } from "react-router-dom";
 import "./RegisterPage.css";
 
-
 function RegisterPage(): JSX.Element {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -92,7 +91,7 @@ function RegisterPage(): JSX.Element {
                         />
                     </div>
 
-                    <button onClick={handleRegister} className="register-submit-button" disabled={isRegistering}>
+                    <button type="submit" className="register-submit-btn" disabled={isRegistering}>
                         {isRegistering ? "Registrando..." : "Registrarse"}
                     </button>
                 </form>

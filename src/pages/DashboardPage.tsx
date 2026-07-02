@@ -47,7 +47,7 @@ function DashboardPage(): JSX.Element {
                         <p className="user-name">{user?.displayName}</p>
                     </div>
                 </div>
-                <button onClick={handleLogout} className="btn-logout">
+                <button onClick={handleLogout} className="logout-btn">
                     Cerrar Sesión
                 </button>
             </header>
