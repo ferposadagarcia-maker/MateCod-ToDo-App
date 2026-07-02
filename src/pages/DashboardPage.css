@@ -20,20 +20,14 @@
     gap: 12px;
 }
 
-.user-avatar {
-    font-size: 1.5rem;
-    background-color: #f3f4f6;
-    padding: 8px;
-    border-radius: 50%;
-}
 
 .user-welcome {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     color: #9ca3af;
     margin: 0;
 }
 
-.user-email {
+.user-name {
     font-size: 0.875rem;
     font-weight: 700;
     color: #1f2937;
@@ -43,7 +37,7 @@
 .logout-btn {
     background-color: transparent;
     border: 1px solid #d1d5db;
-    color: #676b71;
+    color: var(--text-main);
     padding: 8px 16px;
     border-radius: 10px;
     font-size: 0.75rem;

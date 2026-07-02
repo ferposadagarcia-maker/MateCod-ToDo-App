@@ -97,7 +97,7 @@
     padding: 14px 0;
     font-size: 0.875rem;
     font-weight: 600;
-    color: var(--text-main);
+    color: var(--text-muted);
     background-color: var(--accent-black);
     border: none;
     border-radius: 12px;
@@ -183,7 +183,7 @@
     }
 
     .highlight-text {
-        color: var(--priority-low);
+        color: var(--text-main);
         font-style: italic;
     }
 

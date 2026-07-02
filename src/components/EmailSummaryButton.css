@@ -3,14 +3,13 @@
     width: 100%;
 }
 
-/* Botón de Correo - Seguirá la misma línea minimalista */
 .email-submit-btn {
     width: 100%;
     padding: 12px 0;
     font-size: 0.825rem;
     font-weight: 700;
     color: var(--text-main);
-    background-color: #ffffff;
+    background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     cursor: pointer;
@@ -25,14 +24,12 @@
     border-color: var(--text-main);
 }
 
-/* Estado de éxito (Se pinta de color verde pastel DailyLoop) */
 .email-submit-btn.success {
     background-color: #e6fbf4;
     color: #047857;
     border-color: #a7f3d0;
 }
 
-/* Estado de error (Se pinta de color rojo pastel) */
 .email-submit-btn.error {
     background-color: #fef2f2;
     color: #b91c1c;
@@ -44,7 +41,6 @@
     cursor: not-allowed;
 }
 
-/* Alertas de texto sutiles */
 .email-error-text,
 .email-success-text {
     font-size: 0.75rem;
@@ -59,5 +55,5 @@
 }
 
 .email-success-text {
-    color: #059669;
+    color: #0971507c;
 }
