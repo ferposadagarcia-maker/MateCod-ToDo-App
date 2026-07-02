@@ -114,22 +114,22 @@ El directorio se organiza de forma modular para garantizar una legibilidad impec
 ```text
 to-do-app/
 ├── api/
-│   └── send-email.ts       # BFF: Función Serverless de Vercel (Node.js)
+│   └── send-email.ts      
 ├── src/
-│   ├── assets/             # Recursos visuales optimizados (.webp)
-│   ├── components/         # Componentes UI reutilizables (TaskForm, TaskCard, EmailSummaryButton)
-│   ├── features/auth/      # Lógica de Autenticación (Authenticator, authErrors)
-│   ├── hooks/              # Hooks personalizados de React (useTasks)
-│   ├── pages/              # Vistas principales (LoginPage, RegisterPage, DashboardPage)
-│   ├── services/           # Integraciones externas (firebase, tasksService)
-│   ├── types/              # Tipados estrictos de TypeScript (task.ts)
-│   ├── App.css             # Archivo de estilos base (limpio de conflictos)
-│   ├── App.tsx             # Router y rutas privadas protegidas
-│   └── index.css           # Variables globales, resets y tokens de color
-├── tests/                  # Suite de pruebas automatizadas con Vitest
+│   ├── assets/             
+│   ├── components/         
+│   ├── features/auth/      
+│   ├── hooks/              
+│   ├── pages/              
+│   ├── services/           
+│   ├── types/              
+│   ├── App.css             
+│   ├── App.tsx             
+│   └── index.css           
+├── tests/                  
 │   ├── emailSummary.test.ts
 │   └── TaskForm.test.tsx
-└── vite.config.ts          # Configuración del compilador y Vitest
+└── vite.config.ts          
 ```
 
 ---
@@ -212,3 +212,10 @@ La construcción del proyecto se realizó mediante un flujo de programación asi
 * **Validación manual estricta:** Ninguna línea de código sugerida por la IA ingresó al proyecto sin que pudiera explicar exactamente qué hacía y por qué.
 
 * **Consultas incrementales:** Se avanzó módulo por módulo (primero los tipos, luego Firestore, luego el hook, luego los estilos y finalmente el deploy), aislando y depurando cada sección por separado.
+
+### 👩🏻‍💻 Desarrolladora
+
+Fernanda Posada
+
+
+
