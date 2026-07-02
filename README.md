@@ -16,7 +16,7 @@ Desarrollada como proyecto integrador del **Módulo 4 de Soy Henry (Full Stack D
 ![Dashboard Page](/src/assets/dashboard-page.png)
 
 ### 3. Dark Mode 🌙
-![Ipad Size](/src/assets/ipad-size-dark.png)
+![Ipad Size](/src/assets/ipad-size-dark-mode.png)
 
 ![Phone Size](/src/assets/phone-size-dark.png)
 
