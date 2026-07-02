@@ -79,7 +79,7 @@
     padding: 8px 0;
     font-size: 0.75rem;
     font-weight: 500;
-    color: #6b7280;
+    color: var(--text-main);
     background-color: transparent;
     border-radius: 8px;
     cursor: pointer;
@@ -88,7 +88,7 @@
 }
 
 .priority-btn:hover {
-    color: #1f2937;
+    color: var(--accent-black);
 }
 
 .priority-btn.active.low {
