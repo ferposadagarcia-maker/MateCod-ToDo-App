@@ -37,6 +37,22 @@ function DashboardPage(): JSX.Element {
     const completedTasks = tasks.filter((task) => task.completed).length;
     const pendingTasks = totalTasks - completedTasks;
 
+    const [isDark, setIsDark] = useState(() => {
+        return document.documentElement.classList.contains("dark");
+    });
+    const toggleTheme = () => {
+        const nextDark = !isDark;
+        setIsDark(nextDark);
+
+        if (nextDark) {
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
+        }
+    };
+
     return (
         <div className="dashboard-container">
             <header className="dashboard-header">
@@ -46,6 +62,19 @@ function DashboardPage(): JSX.Element {
                         <p className="user-welcome">Hola</p>
                         <p className="user-name">{user?.displayName}</p>
                     </div>
+                </div>
+                <div className="header-actions">
+                    <button
+                        onClick={toggleTheme}
+                        className="theme-toggle-btn"
+                        aria-label="Cambiar tema"
+                    >
+                        {isDark ? "☀️" : "🌙"}
+                    </button>
+
+                    <button onClick={handleLogout} className="logout-btn">
+                        Cerrar Sesión
+                    </button>
                 </div>
                 <button onClick={handleLogout} className="logout-btn">
                     Cerrar Sesión

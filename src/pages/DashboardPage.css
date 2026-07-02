@@ -2,12 +2,11 @@
 .dashboard-container {
     min-height: 100vh;
     background-color: #f9fafb;
-    /* Gris muy claro de fondo */
     font-family: inherit;
     box-sizing: border-box;
 }
 
-/* Cabecera / Header */
+/* Header */
 .dashboard-header {
     background-color: #ffffff;
     padding: 16px 40px;
@@ -43,7 +42,6 @@
     margin: 0;
 }
 
-/* Botón de Cerrar Sesión */
 .logout-btn {
     background-color: transparent;
     border: 1px solid #d1d5db;
@@ -62,25 +60,42 @@
     border-color: #fca5a5;
 }
 
-/* Grid de distribución principal (Sidebar + Main) */
+.theme-toggle-btn {
+    background-color: var(--bg-global);
+    border: 1px solid var(--border-color);
+    font-size: 1.15rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    /* Botón circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-subtle);
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--card-bg);
+    transform: scale(1.05);
+}
+
 .dashboard-grid {
     display: grid;
     grid-template-columns: 320px 1fr;
-    /* Columna fija para el formulario, flexible para la lista */
     gap: 32px;
     padding: 32px 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* COLUMNA IZQUIERDA: Sidebar */
+/* Sidebar */
 .dashboard-sidebar {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-/* Widget de Estadísticas */
 .stats-widget {
     background-color: #ffffff;
     padding: 20px;
@@ -125,14 +140,12 @@
     margin-top: 2px;
 }
 
-/* COLUMNA DERECHA: Lista de Tareas */
 .dashboard-main {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Barra de Filtros */
 .filter-bar {
     display: flex;
     gap: 8px;
@@ -161,7 +174,6 @@
     color: #ffffff;
 }
 
-/* Estados de carga, error y vacío */
 .loading-state,
 .error-state {
     text-align: center;
@@ -198,7 +210,6 @@
     flex-direction: column;
 }
 
-/* --- Adaptabilidad Móvil (Responsive) --- */
 @media (max-width: 768px) {
     .dashboard-header {
         padding: 16px 20px;
@@ -206,7 +217,6 @@
 
     .dashboard-grid {
         grid-template-columns: 1fr;
-        /* Una sola columna en dispositivos móviles */
         padding: 20px;
         gap: 24px;
     }
