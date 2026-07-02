@@ -17,7 +17,14 @@ Desarrollada como proyecto integrador del **Módulo 4 de Soy Henry (Full Stack D
 
 ### 3. Dark Mode 🌙
 ![Ipad Size](/src/assets/ipad-size-dark-mode.png)
+
 ![Phone Size](/src/assets/phone-size-dark-mode.png)
+
+### 4. 📨 Correo Recibido
+![Email Send](/src/assets/correo-enviado.png)
+
+![Email Recieved](/src/assets/email-recibido.png)
+
 ---
 ## 🛠️ Stack Tecnológico
 
