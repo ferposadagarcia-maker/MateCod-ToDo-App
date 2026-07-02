@@ -2,7 +2,7 @@
   --bg-global: #f4f2ee;
   --card-bg: #ffffff;
   --text-main: #1c1c1c;
-  --text-muted: #8c8a85;
+  --text-muted: #efd3b8;
   --border-color: #e6e4df;
   --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.02);
   --accent-black: #121212;
@@ -49,12 +49,40 @@ select {
 /* Modo Oscuro */
 html.dark {
   --bg-global: #121212;
-  --card-bg: #1e1e1e;
+  --card-bg: #4b433c;
   --text-main: #f4f2ee;
-  --text-muted: #8c8a85;
-  --border-color: #2d2d2d;
-  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.1);
+  --text-muted: #8e766b;
+  --border-color: #766153;
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
 
   --accent-black: #ffffff;
   --accent-black-hover: #e5e7eb;
+}
+
+html.dark .task-title-text,
+html.dark .task-description-text,
+html.dark .task-due-date,
+html.dark .form-title,
+html.dark .widget-title,
+html.dark .form-label,
+html.dark .stat-number,
+html.dark .user-email {
+  color: #f4f2ee !important;
+}
+
+html.dark .stat-label,
+html.dark .task-due-date-empty {
+  color: #8c8a85 !important;
+}
+
+html.dark .login-submit-btn,
+html.dark .register-submit-btn,
+html.dark .form-submit-btn {
+  color: #121212 !important;
+}
+
+html.dark .login-google-btn {
+  background-color: #1e1e1e !important;
+  border-color: var(--border-color) !important;
+  color: #f4f2ee !important;
 }

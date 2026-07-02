@@ -97,7 +97,7 @@
     padding: 14px 0;
     font-size: 0.875rem;
     font-weight: 600;
-    color: #ffffff;
+    color: var(--text-main);
     background-color: var(--accent-black);
     border: none;
     border-radius: 12px;
