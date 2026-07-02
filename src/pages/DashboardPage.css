@@ -211,3 +211,91 @@
         gap: 24px;
     }
 }
+
+/* CALENDARIO FIJO */
+.calendar-widget {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-subtle);
+}
+
+.calendar-widget-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* Grid de 7 Columnas (Lunes a Domingo) */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    text-align: center;
+}
+
+.calendar-day-name {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.calendar-day-empty {
+    height: 28px;
+}
+
+/* Números de los días */
+.calendar-day-number {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-main);
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    cursor: default;
+}
+
+/* Indicador para el día de hoy (Jet Black de tu paleta) */
+.calendar-day-number.today {
+    background-color: var(--accent-black);
+    color: #ffffff;
+}
+
+/* Punto indicador de tarea pendiente (Rojo arcilla pastel de tu paleta) */
+.calendar-day-number.has-task::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--priority-high);
+}
+
+.calendar-day-number.today.has-task::after {
+    background-color: #ffffff;
+    /* Si hoy tiene tarea, el punto se ve blanco sobre el fondo negro */
+}
+
+.stats-widget,
+.task-form-container,
+.task-card-container {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 2px 8px rgba(0, 0, 0, 0.01) !important;
+    border: 1px solid var(--border-color) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-card-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.02) !important;
+}
