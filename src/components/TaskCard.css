@@ -1,10 +1,8 @@
-/* Contenedor Principal de la Tarjeta */
 .task-card-container {
-    background-color: #ffffff;
+    background-color: var(--card-bg);
     padding: 16px;
     border-radius: 16px;
     border-left: 5px solid #d1d5db;
-    /* Borde izquierdo dinámico según prioridad */
     border-top: 1px solid #f3f4f6;
     border-right: 1px solid #f3f4f6;
     border-bottom: 1px solid #f3f4f6;
@@ -17,23 +15,18 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Colores de Borde Izquierdo según Prioridad */
 .task-card-container.low {
-    border-left-color: #10b981;
-    /* Verde */
+    border-left-color: #f6ba4b;
 }
 
 .task-card-container.medium {
-    border-left-color: #facc15;
-    /* Amarillo */
+    border-left-color: #d76603;
 }
 
 .task-card-container.high {
-    border-left-color: #ef4444;
-    /* Rojo */
+    border-left-color: #830e0e;
 }
 
-/* Estilo para Tarea Completada (Feedback Visual) */
 .task-card-container.completed {
     opacity: 0.6;
 }
@@ -43,8 +36,6 @@
     color: #9ca3af;
 }
 
-/* --- VISTA DE LECTURA --- */
-
 .card-header {
     display: flex;
     align-items: center;
@@ -52,7 +43,6 @@
     margin-bottom: 8px;
 }
 
-/* Checkbox redondo y moderno */
 .task-checkbox {
     width: 18px;
     height: 18px;
@@ -70,7 +60,6 @@
     margin: 0;
 }
 
-/* Badges de Prioridad */
 .priority-badge {
     font-size: 0.65rem;
     font-weight: 700;
@@ -94,15 +83,12 @@
     color: #b91c1c;
 }
 
-/* Texto de descripción */
 .task-description-text {
     font-size: 0.875rem;
     color: #4b5563;
     margin: 0 0 12px 30px;
-    /* Alineado bajo el título sin pisar el checkbox */
 }
 
-/* Footer de Tarjeta */
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -121,7 +107,6 @@
     font-style: italic;
 }
 
-/* Botones de acción del footer */
 .card-actions-group {
     display: flex;
     gap: 8px;
@@ -155,8 +140,6 @@
     background-color: #fef2f2;
 }
 
-
-/* --- VISTA DE EDICIÓN --- */
 
 .card-edit-mode {
     display: flex;

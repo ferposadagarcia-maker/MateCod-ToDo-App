@@ -76,9 +76,6 @@ function DashboardPage(): JSX.Element {
                         Cerrar Sesión
                     </button>
                 </div>
-                <button onClick={handleLogout} className="logout-btn">
-                    Cerrar Sesión
-                </button>
             </header>
 
             <main className="dashboard-grid">

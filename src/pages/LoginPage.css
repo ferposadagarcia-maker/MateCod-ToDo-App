@@ -1,4 +1,3 @@
-/* Contenedor Principal Adaptable (Mobile First) */
 .login-page-wrapper {
     min-height: 100vh;
     background-color: var(--bg-global);
@@ -8,13 +7,10 @@
     box-sizing: border-box;
 }
 
-/* Panel Izquierdo: Ilustración (Por defecto oculto en móviles) */
 .login-illustration-panel {
     display: none;
-    /* Oculto en móviles */
 }
 
-/* Panel Derecho: Formulario */
 .login-form-panel {
     width: 100%;
     display: flex;
@@ -26,7 +22,6 @@
     box-sizing: border-box;
 }
 
-/* Tarjeta del Formulario */
 .login-card {
     background-color: var(--card-bg);
     padding: 40px;
@@ -38,7 +33,6 @@
     box-sizing: border-box;
 }
 
-/* Título de la tarjeta */
 .login-title {
     font-size: 1.5rem;
     font-weight: 800;
@@ -57,7 +51,6 @@
     text-align: center;
 }
 
-/* Alertas de error sutiles */
 .login-error-alert {
     font-size: 0.875rem;
     color: #b91c1c;
@@ -68,7 +61,6 @@
     border: 1px solid #fee2e2;
 }
 
-/* Inputs de texto redondeados tipo píldora */
 .login-group {
     margin-bottom: 16px;
 }
@@ -100,7 +92,6 @@
     box-shadow: 0 0 0 3px rgba(28, 28, 28, 0.08);
 }
 
-/* Botón Principal - Carbón */
 .login-submit-btn {
     width: 100%;
     padding: 14px 0;
@@ -119,7 +110,6 @@
     background-color: var(--accent-black-hover);
 }
 
-/* Botón de Google */
 .login-google-btn {
     width: 100%;
     padding: 12px 0;
@@ -140,7 +130,6 @@
     background-color: #f9fafb;
 }
 
-/* Enlace inferior de registro */
 .login-footer-text {
     font-size: 0.875rem;
     color: var(--text-muted);
@@ -160,13 +149,11 @@
     text-decoration: underline;
 }
 
-/* Grid de 2 Columnas */
 
 @media (min-width: 768px) {
     .login-page-wrapper {
         display: grid;
         grid-template-columns: 1.2fr 1fr;
-        /* Columna izquierda de ilustración más ancha */
         align-items: stretch;
     }
 
@@ -176,7 +163,6 @@
         justify-content: center;
         align-items: center;
         background-color: #f4f0ea;
-        /* Tono beige suave ligeramente más oscuro que el fondo global */
         padding: 40px;
         box-sizing: border-box;
         border-right: 1px solid var(--border-color);
@@ -196,10 +182,8 @@
         margin: 0;
     }
 
-    /* Resaltado del "Ya quedó!" */
     .highlight-text {
         color: var(--priority-low);
-        /* Usamos el verde suave DailyLoop */
         font-style: italic;
     }
 
