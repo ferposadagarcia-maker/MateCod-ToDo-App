@@ -23,14 +23,14 @@
 
 .user-welcome {
     font-size: 1.5rem;
-    color: #9ca3af;
+    color: var(--accent-black);
     margin: 0;
 }
 
 .user-name {
     font-size: 0.875rem;
     font-weight: 700;
-    color: #1f2937;
+    color: var(--text-main);
     margin: 0;
 }
 
@@ -152,7 +152,7 @@
     border: none;
     font-size: 0.875rem;
     font-weight: 600;
-    color: #6b7280;
+    color: var(--text-main);
     cursor: pointer;
     padding: 6px 12px;
     border-radius: 8px;
@@ -160,11 +160,11 @@
 }
 
 .filter-btn:hover {
-    color: #111827;
+    color: var(--accent-black);
 }
 
 .filter-btn.active {
-    background-color: #111827;
+    background-color: var(--accent-black);
     color: #ffffff;
 }
 
